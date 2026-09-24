@@ -1,0 +1,390 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Georgia, serif;
+  line-height: 1.6;
+  background-color: #f8f5f0;
+  color: #1c1c1c;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+h2 {
+  font-size: 3.2rem;
+  line-height: 1.1;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+/* ===== NAVBAR ===== */
+
+header {
+  padding: 20px 6%;
+  background-color: #f8f5f0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+}
+
+nav ul a {
+  font-size: 0.95rem;
+}
+
+.nav-cta {
+  padding: 10px 20px;
+  border: 1px solid #1c1c1c;
+  border-radius: 4px;
+}
+/* ===== HERO ===== */
+
+.hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 6%;
+  color: white;
+
+  background-color: #2b2622; /* dark color shows when there's no photo */
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 0.8rem;
+  margin-bottom: 15px;
+}
+
+.hero h1 {
+  font-size: 5rem;
+  line-height: 1.05;
+  margin-bottom: 25px;
+  font-weight: 400;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.hero-buttons a {
+  padding: 14px 28px;
+  border: 1px solid white;
+  transition: 0.3s;
+}
+
+.hero-buttons a:first-child {
+  background-color: white;
+  color: #1c1c1c;
+}
+
+.hero-buttons a:hover {
+  background-color: #1c1c1c;
+  color: white;
+}
+/* ===== EXPERIENCE ===== */
+
+#experience {
+  padding: 120px 6%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.experience-features {
+  display: grid;
+  gap: 30px;
+}
+.experience-features article {
+  border-top: 1px solid #1c1c1c;
+  padding-top: 20px;
+}
+.experience-features h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+
+/* ===== MENU ===== */
+
+#menu {
+  padding: 120px 6%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.menu-highlight {
+  min-height: auto;
+}
+
+.menu-category {
+  margin-bottom: 30px;
+}
+
+.menu-category h3 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #1c1c1c;
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+}
+
+.menu-category li {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 6px 0;
+}
+
+#menu a {
+  display: inline-block;
+  margin-top: 25px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #1c1c1c;
+}
+
+/* ===== EVENTS ===== */
+
+#events {
+  min-height: 70vh;
+  padding: 120px 6%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  background-color: #1c1c1c;
+  color: white;
+}
+#events > div {
+  max-width: 700px;
+}
+
+#events a {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 14px 28px;
+  border: 1px solid white;
+  transition: 0.3s;
+}
+#events a:hover {
+  background-color: white;
+  color: #1c1c1c;
+}
+/* ===== ABOUT ===== */
+
+#about {
+  padding: 120px 6%;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* ===== RESERVATION ===== */
+
+#reservation {
+  padding: 120px 6%;
+  background-color: #e9e2d8;
+  text-align: center;
+}
+
+#reservation > div {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#reservation a {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 14px 30px;
+  background-color: #1c1c1c;
+  color: white;
+  transition: 0.3s;
+}
+
+#reservation a:hover {
+  background-color: #444;
+}
+/* ===== CONTACT ===== */
+
+#contact {
+  padding: 120px 6%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.location {
+  min-height: 400px;
+  background-color: #ddd5ca;
+}
+
+#contact a {
+  display: inline-block;
+  margin-top: 20px;
+  border-bottom: 1px solid #1c1c1c;
+  padding-bottom: 5px;
+}
+/* ===== FOOTER ===== */
+
+footer {
+  padding: 60px 6%;
+  background-color: #1c1c1c;
+  color: white;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+footer a {
+  display: block;
+  margin-bottom: 8px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+footer > p {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  #experience,
+  #menu,
+  #events,
+  #about,
+  #reservation,
+  #contact {
+    padding: 70px 6%;
+  }
+
+  #experience,
+  #menu,
+  #contact {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  #menu h2,
+  #contact h2,
+  #about h2,
+  #events h2,
+  #reservation h2 {
+    font-size: 2.2rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer {
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px);
+
+body {
+  font-family: "Jost", sans-serif;
+  font-weight: 300;
+}
+h1,
+h2,
+h3,
+.logo {
+  font-family: "Cormorant Garamond", Georgia, serif;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: rgba(248, 245, 240, 0.95);
+}
+
+html {
+  scroll-padding-top: 80px;
+}
+.eyebrow {
+  color: #8a6d3b;
+}
+.hero .eyebrow {
+  color: #d4b483;
+}
+.hero-content {
+  animation: fadeUp 1.2s ease both;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.nav-cta {
+  transition: 0.3s;
+}
+.nav-cta:hover {
+  background-color: #1c1c1c;
+  color: white;
+}
