@@ -265,7 +265,10 @@ nav ul a {
   min-height: 400px;
   background-color: #ddd5ca;
 }
-
+.location iframe {
+  display: block;
+  border: 0;
+}
 #contact a {
   display: inline-block;
   margin-top: 20px;
