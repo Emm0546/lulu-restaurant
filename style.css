@@ -388,3 +388,54 @@ html {
   background-color: #1c1c1c;
   color: white;
 }
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 14px;
+  }
+
+  .logo {
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 20px;
+  }
+
+  .nav-cta {
+    order: 3;
+  }
+
+  .hero h1 {
+    font-size: 2.8rem;
+  }
+
+  #experience,
+  #menu,
+  #contact {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+  #events h2,
+  #reservation h2 {
+    font-size: 2.5rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer {
+    flex-direction: column;
+  }
+}
