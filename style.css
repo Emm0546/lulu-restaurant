@@ -6,10 +6,12 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 80px;
 }
 
 body {
-  font-family: Georgia, serif;
+  font-family: "Jost", sans-serif;
+  font-weight: 300;
   line-height: 1.6;
   background-color: #f8f5f0;
   color: #1c1c1c;
@@ -24,17 +26,36 @@ ul {
   list-style: none;
 }
 
+h1,
+h2,
+h3,
+.logo {
+  font-family: "Cormorant Garamond", Georgia, serif;
+}
+
 h2 {
   font-size: 3.2rem;
   line-height: 1.1;
   font-weight: 400;
   margin-bottom: 20px;
 }
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 0.8rem;
+  margin-bottom: 15px;
+  color: #8a6d3b;
+}
+
 /* ===== NAVBAR ===== */
 
 header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
   padding: 20px 6%;
-  background-color: #f8f5f0;
+  background-color: rgba(248, 245, 240, 0.95);
 }
 
 nav {
@@ -63,7 +84,14 @@ nav ul a {
   padding: 10px 20px;
   border: 1px solid #1c1c1c;
   border-radius: 4px;
+  transition: 0.3s;
 }
+
+.nav-cta:hover {
+  background-color: #1c1c1c;
+  color: white;
+}
+
 /* ===== HERO ===== */
 
 .hero {
@@ -75,7 +103,7 @@ nav ul a {
   padding: 80px 6%;
   color: white;
 
-  background-color: #2b2622; /* dark color shows when there's no photo */
+  background-color: #2b2622; /* shows if the photo fails to load */
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
     url("images/hero.jpg");
@@ -85,13 +113,11 @@ nav ul a {
 
 .hero-content {
   max-width: 800px;
+  animation: fadeUp 1.2s ease both;
 }
 
-.eyebrow {
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 0.8rem;
-  margin-bottom: 15px;
+.hero .eyebrow {
+  color: #d4b483;
 }
 
 .hero h1 {
@@ -128,6 +154,18 @@ nav ul a {
   background-color: #1c1c1c;
   color: white;
 }
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 /* ===== EXPERIENCE ===== */
 
 #experience {
@@ -137,14 +175,17 @@ nav ul a {
   gap: 80px;
   align-items: center;
 }
+
 .experience-features {
   display: grid;
   gap: 30px;
 }
+
 .experience-features article {
   border-top: 1px solid #1c1c1c;
   padding-top: 20px;
 }
+
 .experience-features h3 {
   font-size: 1.2rem;
   margin-bottom: 8px;
@@ -160,6 +201,7 @@ nav ul a {
   gap: 80px;
   align-items: center;
 }
+
 .menu-highlight {
   min-height: auto;
 }
@@ -203,6 +245,7 @@ nav ul a {
   background-color: #1c1c1c;
   color: white;
 }
+
 #events > div {
   max-width: 700px;
 }
@@ -214,10 +257,12 @@ nav ul a {
   border: 1px solid white;
   transition: 0.3s;
 }
+
 #events a:hover {
   background-color: white;
   color: #1c1c1c;
 }
+
 /* ===== ABOUT ===== */
 
 #about {
@@ -252,6 +297,7 @@ nav ul a {
 #reservation a:hover {
   background-color: #444;
 }
+
 /* ===== CONTACT ===== */
 
 #contact {
@@ -261,20 +307,24 @@ nav ul a {
   gap: 80px;
   align-items: center;
 }
+
 .location {
   min-height: 400px;
   background-color: #ddd5ca;
 }
+
 .location iframe {
   display: block;
   border: 0;
 }
+
 #contact a {
   display: inline-block;
   margin-top: 20px;
   border-bottom: 1px solid #1c1c1c;
   padding-bottom: 5px;
 }
+
 /* ===== FOOTER ===== */
 
 footer {
@@ -283,113 +333,34 @@ footer {
   color: white;
 
   display: flex;
-  justify-content: space-between;
-  gap: 40px;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 24px;
 }
 
 footer a {
-  display: block;
-  margin-bottom: 8px;
+  margin-bottom: 0;
 }
 
 footer a:hover {
   text-decoration: underline;
 }
+
+footer > div:nth-child(2) {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  justify-content: center;
+}
+
 footer > p {
   font-size: 0.8rem;
   opacity: 0.7;
 }
 
-@media (max-width: 768px) {
-  nav {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 16px;
-  }
+/* ===== MOBILE ===== */
 
-  #experience,
-  #menu,
-  #events,
-  #about,
-  #reservation,
-  #contact {
-    padding: 70px 6%;
-  }
-
-  #experience,
-  #menu,
-  #contact {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  #menu h2,
-  #contact h2,
-  #about h2,
-  #events h2,
-  #reservation h2 {
-    font-size: 2.2rem;
-  }
-
-  .hero-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-  footer {
-    flex-direction: column;
-  }
-}
-
-body {
-  font-family: "Jost", sans-serif;
-  font-weight: 300;
-}
-h1,
-h2,
-h3,
-.logo {
-  font-family: "Cormorant Garamond", Georgia, serif;
-}
-
-header {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  background-color: rgba(248, 245, 240, 0.95);
-}
-
-html {
-  scroll-padding-top: 80px;
-}
-.eyebrow {
-  color: #8a6d3b;
-}
-.hero .eyebrow {
-  color: #d4b483;
-}
-.hero-content {
-  animation: fadeUp 1.2s ease both;
-}
-
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-.nav-cta {
-  transition: 0.3s;
-}
-.nav-cta:hover {
-  background-color: #1c1c1c;
-  color: white;
-}
 @media (max-width: 768px) {
   nav {
     flex-wrap: wrap;
@@ -420,6 +391,15 @@ html {
 
   #experience,
   #menu,
+  #events,
+  #about,
+  #reservation,
+  #contact {
+    padding: 70px 6%;
+  }
+
+  #experience,
+  #menu,
   #contact {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -428,6 +408,7 @@ html {
   h2 {
     font-size: 2.2rem;
   }
+
   #events h2,
   #reservation h2 {
     font-size: 2.5rem;
@@ -437,45 +418,4 @@ html {
     flex-direction: column;
     align-items: center;
   }
-  footer {
-    flex-direction: column;
-  }
-
-  footer {
-    align-items: center;
-    text-align: center;
-  }
-}
-footer > div:nth-child(2) {
-  display: flex;
-  gap: 28px;
-  align-items: center;
-}
-
-footer {
-  padding: 60px 6%;
-  background-color: #1c1c1c;
-  color: white;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 24px;
-}
-
-footer a {
-  margin-bottom: 0;
-}
-
-footer > div:nth-child(2) {
-  display: flex;
-  gap: 28px;
-  align-items: center;
-  justify-content: center;
-}
-
-footer > p {
-  font-size: 0.8rem;
-  opacity: 0.7;
 }
