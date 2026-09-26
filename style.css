@@ -442,3 +442,18 @@ html {
     flex-direction: column;
   }
 }
+
+footer > div:nth-child(2) {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+footer > div:nth-child(2) a {
+  margin-bottom: 0;
+}
+footer > div:nth-child(2) {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
