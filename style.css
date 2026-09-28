@@ -231,7 +231,16 @@ nav ul a {
   padding-bottom: 5px;
   border-bottom: 1px solid #1c1c1c;
 }
+.menu-soon {
+  border-top: 1px solid #1c1c1c;
+  padding-top: 20px;
+}
 
+.menu-soon h3 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
 /* ===== EVENTS ===== */
 
 #events {
