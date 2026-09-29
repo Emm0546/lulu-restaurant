@@ -333,7 +333,18 @@ nav ul a {
   border-bottom: 1px solid #1c1c1c;
   padding-bottom: 5px;
 }
+.hours {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 16px 20px;
+  background-color: #f1ece3;
+  border-radius: 8px;
+  display: inline-block;
+}
 
+.hours p {
+  margin-bottom: 4px;
+}
 /* ===== FOOTER ===== */
 
 footer {
