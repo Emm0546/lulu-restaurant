@@ -1,0 +1,64 @@
+# 🍽️ LULU — Restaurant Website
+
+A premium one-page website built as a freelance proposal for **LULU Restaurant**, a contemporary restaurant in Abidjan, Côte d'Ivoire.
+
+## 🎯 Project Context
+
+I live right across the street from LULU and noticed they had no real website of their own, only third-party listings on review and reservation platforms. I built a complete demo on my own initiative and presented it directly to the restaurant's team, as a way to pitch real client work while learning web development.
+
+## 🚀 Live Preview
+
+👉 https://emm0546.github.io/lulu-restaurant/
+
+> **Note:** This is a client proposal, not yet the restaurant's official production site. Menu items and some details are placeholders pending real content from the restaurant.
+
+## 🎨 Features
+
+- **Elegant, Premium Design** — Serif display type (Cormorant Garamond) paired with a clean sans-serif body font (Jost), a warm neutral palette, and generous spacing to match the restaurant's upscale positioning.
+- **Fully Responsive** — Built with CSS Grid and Flexbox, with a dedicated mobile layout (nav, hero, menu, footer all adapted for small screens).
+- **Sticky Navigation** — Header stays accessible while scrolling, with smooth anchor-link scrolling between sections.
+- **One-Page Structure** — Hero, L'expérience, La carte (menu), Événements, À propos, Réservation, and Contact, all in a single smooth-scrolling page.
+- **Direct Reservation Flow** — A "Réserver sur WhatsApp" button opens a pre-filled WhatsApp message, no booking form or backend needed.
+- **Embedded Google Map** — Live, interactive map pointing to the restaurant's real location, plus a direct "Voir sur Google Maps" link.
+- **Real Contact Channels** — Phone (`tel:`), WhatsApp (`wa.me`), and email (`mailto:`) links, all wired to the restaurant's actual contact details.
+- **Social Links** — Instagram and Facebook, confirmed as the restaurant's real accounts.
+
+## 🛠️ Built With
+
+- **HTML5** — Semantic structure
+- **CSS3** — Grid, Flexbox, custom properties, responsive design, animations
+- **Google Fonts** — Cormorant Garamond & Jost
+- **Google Maps Embed** — No API key required
+- **Git & GitHub** — Version control
+- **GitHub Pages** — Live hosting for the demo
+
+## 📚 What I Practiced
+
+- Semantic HTML structure for a one-page business site
+- CSS Grid & Flexbox for responsive, multi-section layouts
+- Mobile-first debugging (nav overflow, footer alignment, iframe sizing)
+- Typography and visual hierarchy for a premium brand feel
+- Writing clean, de-duplicated, well-organized CSS
+- `wa.me`, `tel:`, and `mailto:` link formatting
+- Client communication: pitching, following up, and drafting a service contract
+
+## 💼 Status
+
+Currently a proposal under review by the restaurant's owner. If accepted, next steps include:
+
+- Replacing placeholder menu items with the real carte
+- Adding real photography (hero image, dishes, interior)
+- A signed service agreement covering site delivery and ongoing monthly maintenance
+
+## Future Improvements
+
+- Real menu with categories, descriptions, and pricing in FCFA
+- Professional photography throughout
+- Possible stock management tooling for the restaurant (separate project, under discussion)
+- Moving off GitHub Pages to a dedicated domain and host for production
+
+## 👨🏽‍💻 Author
+
+**Emma**
+
+Built as a self-taught developer project, following [The Odin Project](https://www.theodinproject.com/) curriculum.
